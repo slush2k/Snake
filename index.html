@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Example1</title>
+    <script src="dist/app.js" defer></script>
+    <style>
+      #container {
+        position: relative;
+        margin: auto;
+        border: 3px solid #bdbdbd;
+        display: flex;
+      }
+      #canvas {
+        position: relative;
+        margin: auto;
+        border: 2px solid #73ad21;
+      }
+
+      .vertical-center {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+      }
+      .title {
+        width: 50%;
+        margin: auto;
+        padding: 10px;
+        text-align: center;
+      }
+      .score {
+        padding-top: 100px;
+        width: 300px;
+        text-align: center;
+        border: 0px solid #73ad21;
+      }
+      #snakeSeg {
+        position: relative;
+        margin: 2px;
+        height:21px;
+        width: 21px;
+        top: 975px;
+        left: 0px;
+        border: 0px solid #ffffff;
+        background-color: #5cc3ff;
+      }
+      #snakeSeg2 {
+        position: relative;
+        margin: 2px;
+        height:21px;
+        width: 21px;
+        top: 975px;
+        left: 0px;
+        border: 0px solid #ffffff;
+        background-color: #0c8aff;
+      }
+    </style>
+  </head>
+  <body>
+    
+    
+    <div id="container">
+      <canvas id="canvas" width="1000" height="1000"></canvas>
+      <div class="score">
+        <p>Snake!</p>
+        <p>Score: 0</p>
+      </div>
+    </div>
+  </body>
+</html>
